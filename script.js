@@ -13,10 +13,17 @@ function addTask(){
         let span = document.createElement("span");
         span.innerHTML = "\u00d7" //รหัส Unicode ของกากบาท
         li.appendChild(span);
+
         saveData();
     }
     inputBox.value = ""; //พอกดปุ่ม add แล้วมันจะกลับมาว่าเปล่าอีกครั้งหนึ่ง
 }
+
+inputBox.addEventListener("keydown", function(e) {
+    if (e.key === "Enter") {
+        addTask();
+    }
+});
 
 //check uncheck and remove
 listContainer.addEventListener("click", function(e){
