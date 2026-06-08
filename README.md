@@ -2,6 +2,8 @@
 
 A simple, client-side to-do list built with HTML, CSS, and JavaScript. Tasks are saved in the browser using `localStorage`, so they persist across page refreshes.
 
+preview : https://niing85.github.io/todo-list-web/
+
 ## Features
 
 - **Add tasks** — Type a task and click **ADD** or **ENTER**.
